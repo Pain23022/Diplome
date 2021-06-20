@@ -1,0 +1,249 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{%static 'menu/font/fonts.css'%}">
+    <link rel="stylesheet" href="{%static 'menu/css/style.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <title>Gamach Burger</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{% url 'main' %}">
+                        <img src="{% static 'menu/img/Group 1.svg' %}" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Меню
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Бургеры</a></li>
+                                    <li><a class="dropdown-item" href="#">Стейки</a></li>
+                                    <li><a class="dropdown-item" href="#">Твистеры</a></li>
+                                    <li><a class="dropdown-item" href="#">Напитки</a></li>
+                                    <li><a class="dropdown-item" href="#">Кофе</a></li>
+                                    <li><a class="dropdown-item" href="#">Чаи</a></li>
+                                    <li><a class="dropdown-item" href="#">Гарниры</a></li>
+                                    <li><a class="dropdown-item" href="#">Соусы</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{% url 'delivery' %}">Доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{% url 'pay' %}">Оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">О нас</a>
+                            </li>
+                            <li>
+                                <div class="menu-cart">
+                                    <a class="nav-link active" href="">
+                                        <img src="{% static 'menu/img/shoping_cart.svg'%}" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-contact">
+                                    <a class="nav-link active" href="tel:89882913144">
+                                        <img class="phone" src="{% static 'menu/img/phone.svg'%}" alt="">
+                                        <span>8-988-291-31-44</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="home_banner">
+            <div class="container">
+                <div class="row">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide block">
+                                <img src="{% static 'menu/img/banner1.png'%}" alt="">
+                                <h2>Новость</h2>
+                                <p>Информация о новости</p>
+                            </div>
+                            <div class="swiper-slide block">
+                                <img src="{% static 'menu/img/banner1.png'%}" alt="">
+                                <h2>Новость</h2>
+                                <p>Информация о новости</p>
+                            </div>
+                            <div class="swiper-slide block">
+                                <img src="{% static 'menu/img/banner1.png'%}" alt="">
+                                <h2>Новость</h2>
+                                <p>Информация о новости</p>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="home-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="swiper-container-menu">
+                        <div class="swiper-wrapper">
+                            <a href="" class="swiper-slide">
+                                <span>Бургеры</span>
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <span>Стейки</span>
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <span>Твистеры</span>
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <span>Напитки</span>
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <span>Кофе</span>
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <span>Чаи</span>
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <span>Гарниры</span>
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <span>Соусы</span>
+                            </a>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-products">
+            <div class="container">
+                <h3 class="all_products">Все товары</h3>
+                <div class="products-wrapper">
+                    {%for i in menu%}
+                        <div class="product">
+                            <div class="img"></div>
+                            <a href="" class="title">{{i.title}}.</a>
+                            <p class="description">
+                                {{i.description}}.
+                            </p>
+                            <div class="price">
+                                <b>{{i.price}}₽/кг</b> <span> за {{i.weight}}гр</span>
+                            </div>
+                            <a href="" class="to-cart">В корзину</a>
+                        </div>
+                    {%endfor%}
+                </div>
+
+                <div class="pagination-block">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">●●●</a></li>
+                            <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-left">
+                        <div class="phones">
+                            <div class="phone-item">
+                                <span>Для приема заказов</span>
+                                <span>в городе Махачкала</span>
+                                <a href="tel:89882913199">8-988-291-31-99</a>
+                            </div>
+                            <div class="phone-item">
+                                <span>Для приема заказов</span>
+                                <span>в городе Каспийск</span>
+                                <a href="tel:89882913144">8-988-291-31-44</a>
+                            </div>
+                        </div>
+                        <div class="work-time">График работы: с 11:00 до 00:00</div>
+                    </div>
+                    <div class="footer-center">
+                        <div class="work-adress">
+                            г. Махачкала, ул. Магомеда Гаджиева 86
+                        </div>
+                        <div class="work-adress">
+                            г. Каспийск, ул. Хизроева 1
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="social">
+                            <a href="">Мы в instagram ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>©2021. Gamach Burger</span>
+                    <a href="">Условия и соглашения</a>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        })
+
+        var menuswiper = new Swiper('.swiper-container-menu', {
+            slidesPerView: 'auto',
+            spaceBetween: 200,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+
+    </script>
+
+</body>
+
+</html>
