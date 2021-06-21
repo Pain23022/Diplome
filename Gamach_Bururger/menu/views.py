@@ -12,8 +12,8 @@ def index(request):
     }
     return render(request, 'menu/index.html', context)
 
-def card(request):
-    menu = Menu.objects.all()
+def card(request,pk):
+    menu = Menu.objects.get(pk=pk)
     category = Category.objects.all()
     order = Order.objects.all()
     context = {

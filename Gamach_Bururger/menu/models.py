@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse_lazy
 
 
 class Category(models.Model):
@@ -19,6 +20,10 @@ class Menu(models.Model):
     weight = models.IntegerField(verbose_name='вес')
     availability = models.BooleanField(default=True, verbose_name='наличие')
     category = models.ForeignKey(Category, on_delete=models.PROTECT, verbose_name='катигория')
+
+    def get_absolute_url(self):
+        return reverse_lazy('card', kwargs={'pk':self.pk})
+
 
     def __str__(self):
         return self.title

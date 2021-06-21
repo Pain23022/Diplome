@@ -1,5 +1,5 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -76,40 +76,38 @@
             <div class="container">
                 <div class="card-top">
                     <div class="card-img">
-                        <img src="" alt="">
+                        <img src="{{menu.image.url}}" alt="">
                     </div>
                     <div class="card-sidebar">
-                        <div class="title">Бургер 500гр</div>
+                        <div class="title">{{menu.title}}</div>
                         <div class="price">
-                            <span>Цена за шт.</span> <b>1 050 ₽</b>
+                            <span>Цена за шт.</span> <b>{{menu.price}}</b>
                         </div>
                         <div class="price">
                             <span>Количество</span>
                             <div class="input_range">
                                 <span class="min button">
-                                    <img src="img/minus.png" alt="">
+                                    <img src="{%static 'menu/img/minus.png'%}" alt="">
                                 </span>
                                 <input type="text" name="qty" id="qty" maxlength="12" />
                                 <span class="plus button">
-                                    <img src="img/plus.png" alt="">
+                                    <img src="{%static 'menu/img/plus.png'%}" alt="">
                                 </span>
                             </div>
                         </div>
                         <div class="to-pay">
                             <span>Итого к оплате</span>
-                            <b>1 050 ₽</b>
+                            <b>{{menu.price}}</b>
                         </div>
                         <div class="pay-block">
-                            <button class="cart-add"><img src="img/add-to-cart.png" alt=""></button>
+                            <button class="cart-add"><img src="{%static 'menu/img/add-to-cart.png'%}" alt=""></button>
                         </div>
                     </div>
                 </div>
                 <div class="card-bottom">
                     <div class="card-info">
                         <h2>Описание</h2>
-                        <p>Полутвердый пластичный однородный сыр, слегка ломкий на изгибе. Пажитник придает легкое ореховое послевкусие. В Италии считается столовым сыром, который подходит к любому времени суток и к любому блюду и к вину<br>
-                            Вес головки 500 г. +/-10%. Цена за 1 кг.<br>
-                            Продукция компании Alpenville изготовлена преимущественно из Шарангского молока</p>
+                        <p>{{menu.description}}</p>
                     </div>
                     <div class="card-empty"></div>
                 </div>
