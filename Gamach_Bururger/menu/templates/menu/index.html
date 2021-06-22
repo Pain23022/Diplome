@@ -54,14 +54,8 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="{% url 'pay' %}">Оплата</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">О нас</a>
-                            </li>
                             <li>
                                 <div class="menu-cart">
-                                    <a class="nav-link active" href="">
-                                        <img src="{% static 'menu/img/shoping_cart.svg'%}" alt="">
-                                    </a>
                                 </div>
                             </li>
                             <li>
@@ -136,7 +130,7 @@
                             <div class="price">
                                 <b>{{i.price}}₽/кг</b> <span> за {{i.weight}}гр</span>
                             </div>
-                            <a href="" class="to-cart">В корзину</a>
+                            <a class="btn-ens-action btn-ens-style" data-rel="c4e38183261035">Купить</a>
                         </div>
                     {%endfor%}
                 </div>
