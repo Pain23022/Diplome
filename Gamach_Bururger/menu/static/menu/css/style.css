@@ -169,11 +169,15 @@ header .navbar-collapse .dropdown-menu.show {
   padding-top: 24px;
   padding-bottom: 68px;
 }
-img {
+.img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
+img{
+    max-width: 100%;
+}
+
 .home-products h3.all_products {
   margin-bottom: 35px;
 }
